@@ -1,0 +1,138 @@
+/* Fjern margin */
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap');
+
+/* Generalle regler */
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+font-family: dm serif display;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-size: 1.8vw;
+width: 78%;
+margin-left: auto;
+margin-right: auto;
+/* margin-left: 11%; */
+}
+
+h4 {
+font-family: dm serif display;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-size: 1.4vw;
+color: white;
+padding-bottom: 17px;
+}
+
+p {
+font-family: poppins;
+font-size: 1.1vw; 
+}
+
+/* Styling af forste sektion på siden - forsiden */
+
+/* Styling af anden sektion på siden - om sprödk */
+.omsprod {
+    display: flex;
+    justify-content: center;
+    grid-gap: 60px
+}
+
+#omsprod-tekst {
+    width: 32%;
+}
+
+#omsprod-video {
+    width: 42%;
+    background-color: gray;
+    height: 350px;
+}
+
+.tomat-kasse {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+}
+
+#tomat-illustration {
+    width: 43%;
+    justify-content: center;
+}
+
+/*Styling af tredje sektion på siden - vores menu */
+
+/*Styling af fjerde sektion på siden - lokation */
+.lokationer {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+#lokationer-billeder {
+    background-color: red;
+    width: 58%;
+    height: 500px;
+}
+
+#streg-opdeler {
+    width: 1%;
+}
+
+#lokationer-adresse {
+    width: 17%;
+    background-color: red;
+}
+
+ /* Styling af femte sektion på siden - sprödxme */
+
+ /* Styling af sjette sektion på siden - footer */
+
+footer {
+    background-color: black;
+    height: 250px;
+    list-style-type: none;
+ }
+
+.footer-indhold {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.footer-indhold li {
+    font-size: 0.9vw;
+    color: white;
+    font-family: poppins;
+}
+
+.footer-some {
+    display: flex;
+    background-color: black;
+    grid-gap: 25px;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.some-ikon {
+    width: 4%;
+}

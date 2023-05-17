@@ -1,4 +1,4 @@
-/* Fjern margin */
+/* /*Fjern padding og Margin på hele siden*/
 *,
 *::before,
 *::after {
@@ -11,39 +11,107 @@
 
 /* Generalle regler */
 h1 {
-
+    font-family: dm serif display;
+    font-size: 8vw;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    font-weight: 100;
+    margin-top: 12%;
 }
 
 h2 {
-
+    font-family: dm serif display;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding-bottom: 3%;
 }
 
 h3 {
-font-family: dm serif display;
-text-transform: uppercase;
-letter-spacing: 4px;
-font-size: 1.8vw;
-width: 78%;
-margin-left: auto;
-margin-right: auto;
-/* margin-left: 11%; */
+    font-family: dm serif display;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.9vw;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1%;
+    padding-top: 4%;
 }
 
 h4 {
-font-family: dm serif display;
-text-transform: uppercase;
-letter-spacing: 4px;
-font-size: 1.4vw;
-color: white;
-padding-bottom: 17px;
+    font-family: dm serif display;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.4vw;
+    color: white;
+    padding-bottom: 17px;
+    font-weight: 100;
+}
+
+h6 {
+    font-family: poppins;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.3vw;
 }
 
 p {
-font-family: poppins;
-font-size: 1.1vw; 
+    font-family: poppins;
+    font-size: 1.1vw; 
 }
 
 /* Styling af forste sektion på siden - forsiden */
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: poppins;
+    letter-spacing: 5px;
+    font-size: 1.9vw;
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.circle-solid {
+    width: 8px;
+}
+
+.forside-indhold {
+    text-align: center;
+    width: 78%;
+    margin: auto;
+}
+
+.forside-indhold p {
+    padding-bottom: 2%;
+    padding-bottom: 8%;
+    width: 58%;
+    margin: auto;
+    font-size: 1.4vw;
+}
+
+/* Placering af illustrationerne på forsiden */
+
+#illustration-pizza {
+    width: 30%;
+    position: relative;
+    left: 80px;
+    bottom: 715px;
+  }
+
+  #illustration-basilikum {
+    width: 25%;
+    position: relative;
+    left: 1150px;
+    bottom: 550px;
+  }
+
 
 /* Styling af anden sektion på siden - om sprödk */
 .omsprod {
@@ -66,6 +134,7 @@ font-size: 1.1vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;  
+    padding-top: 5%;
 }
 
 #tomat-illustration {
@@ -73,7 +142,63 @@ font-size: 1.1vw;
     justify-content: center;
 }
 
-/*Styling af tredje sektion på siden - vores menu */
+/* Styling af tredje sektion på siden - vores menu */
+
+.menukort-indhold{
+    background-color: #F2F2F0;
+    height: fit-content;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+}
+
+.menukort-kolonne1, .menukort-kolonne2 {
+    width: 45%;
+}
+
+.menukort-kolonne1 h5, .menukort-kolonne2 h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: poppins;
+    letter-spacing: 4px;
+    font-size: 1.75vw;
+    padding-top: 8%;
+    /* padding-bottom: 2%; */
+}
+
+.menukort-kolonne1 p, .menukort-kolonne2 p {
+    font-size: 1vw;
+    padding-top: 1%;
+    width: 83%;
+}
+
+.pizzaogpris {
+    display: flex;
+    padding-top: 4%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pizzaogpris div:nth-child(3) {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#punktum {
+    border-bottom: 3px dotted black;
+    width: 100%;
+}
+
+.drikke-ikon {
+    width: 10%;
+}
+
+.kage-ikon {
+    width: 13%;
+}
 
 /*Styling af fjerde sektion på siden - lokation */
 .lokationer {
@@ -95,10 +220,22 @@ font-size: 1.1vw;
 
 #lokationer-adresse {
     width: 17%;
-    background-color: red;
 }
 
  /* Styling af femte sektion på siden - sprödxme */
+
+ .instagram {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.instagram-billeder {
+    width: 23%;
+    background-color: gray; 
+}
 
  /* Styling af sjette sektion på siden - footer */
 
@@ -122,6 +259,7 @@ footer {
     font-size: 0.9vw;
     color: white;
     font-family: poppins;
+    padding-bottom: 10%;
 }
 
 .footer-some {
@@ -135,4 +273,226 @@ footer {
 
 .some-ikon {
     width: 4%;
+}
+
+/* Styling af 404-page */
+
+.fourofour {
+    text-align: center;
+    background-color: #F2F2F0;
+    overflow: hidden;
+}
+
+.fourofour h6{
+    font-size: 4vw;
+    font-family: poppins;
+    letter-spacing: 6px;
+    margin-top: 9%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fourofour p {
+    font-size: 2vw;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button {
+    font-size: 1.6vw;
+    background-color: black;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+  }
+
+  /* Placering af illustrationerne på 404-siden  */
+
+  #Spildt-rød {
+    width: 45%;
+    position: relative;
+    left: -90px;
+    bottom: 180px;
+  }
+
+  #Spildt-rose {
+    width: 45%;
+    position: relative;
+    left: 1065px;
+    bottom: 1185px;
+  }
+
+
+/*MEDIA QUERIES*/
+
+/*MOBIL*/ 
+
+@media screen and (max-width: 768px){ 
+    h1 {
+        letter-spacing: 10px;
+        font-size: 17vw;
+        margin-top: 15%;
+    }
+    h2 {
+        font-size: 5vw;
+        padding-bottom: 6%;
+    }
+
+    .forside-indhold p {
+        width: 100%;
+        font-size: 3.5vw;
+        padding: 0px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h3 {
+        width: 85%;
+        font-size: 4vw;
+        margin: none;
+    }
+
+    .omsprod {
+        width: 85%;
+        justify-content: space-between;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #omsprod-tekst p {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    #omsprod-tekst{
+        width: 100%;
+    }
+
+    #omsprod-video {
+        width: 100%;
+    }
+
+    .tomat-kasse {
+        width: 100%;
+    }
+    
+    #tomat-illustration {
+        width: 80%;
+    }
+
+    h4{
+        font-size: 3vw;
+    }
+
+    .menukort-indhold {
+        width: 85%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #punktum {
+        border-bottom: 2px dotted black;
+    }
+
+    h6 {
+        font-size: 3vw;
+    }
+
+    .menukort-kolonne1 p, .menukort-kolonne2 p {
+        font-size: 2.5vw;
+    }
+
+    .menukort-kolonne1, .menukort-kolonne2 {
+        width: 85%;
+        margin: auto;
+    }
+
+    .menukort-kolonne1 h5, .menukort-kolonne2 h5 {
+        font-size: 5vw;
+        text-align: left;
+    }
+
+    .lokationer {
+        flex-direction: column;
+    }
+
+    #lokationer-billeder {
+        width: 85%;
+        height: 300px;
+        /* height: fit-content; når billederne er kommet ind */
+        margin: auto;
+    }
+
+    #streg-opdeler{
+        width: 2.3%;
+    }
+
+    /* Sprödxme mobil */
+    .instagram {
+        width: 85%;
+    }
+
+    .instagram-billeder {
+        width: 100%;
+    }
+
+
+    /* Footer mobil  */
+
+    .footer-indhold {
+        flex-direction: column;
+        text-align: left;
+        width: 85%;
+    }
+
+    .footer-indhold li {
+        font-size: 2.7vw;
+        padding-bottom: 2%;
+    }
+    
+    footer {
+        height: fit-content;
+    }
+
+    h4 {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-size: 4.5vw;
+        width: 85%;
+    }
+
+    .footer-some {
+        width: 85%;
+        margin: auto;
+        justify-content: left;
+    }
+
+    .some-ikon {
+        width: 10%;
+        text-align: left;
+    }
+    
+
+
+ 
+
+}
+
+
+/*LAPTOP*/ 
+    
+@media screen and (min-width: 768px){ 
+
+
 }

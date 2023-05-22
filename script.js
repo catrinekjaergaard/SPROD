@@ -15,8 +15,8 @@ x.addEventListener("click", () => {
 //Slideshow
 const slideshowImages = document.querySelectorAll(".billederslideshow"); //vælger alel billederne slideshow div
 
-let nextImageDelay = 3000; //3sek mellem hvert skift af billeder
-let imageCounter = 0;
+const nextImageDelay = 3000; //3sek mellem hvert skift af billeder const fordi det er den samme handling der ikke ændre sig
+let imageCounter = 0; //let ændre sig
 
 slideshowImages[imageCounter].style.display = "block"; //Blokere de billeder der ikke vises
 

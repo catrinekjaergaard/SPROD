@@ -259,18 +259,10 @@ nav {
 /*Slideshow Start*/
 .slideshow {
     width: 78%;
-    height: fit-content;/*tilføjet*/
+    height: fit-content;
     margin: auto;
-    position: relative;/*tilføjet*/
+    position: relative;
 }
-
-/* .billedeslide {
-    width: 80%;
-} */
-
-/* .billedeslide img {
-    width: 100%;
-} */
 
 .billederslideshow {
     width: 78%;

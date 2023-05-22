@@ -1,8 +1,7 @@
 /* /*Fjern padding og Margin på hele siden*/
-*,
-*::before,
-*::after {
-  margin: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /* Fonts */
@@ -241,7 +240,7 @@ nav {
     text-transform: uppercase;
 }
 
-#punktum {
+.punktum {
     border-bottom: 3px dotted black;
     width: 100%;
 }
@@ -257,37 +256,53 @@ nav {
 
 /*Lokation Start*/
 
+/*Slideshow Start*/
 .slideshow {
     width: 78%;
+    height: fit-content;/*tilføjet*/
     margin: auto;
+    position: relative;/*tilføjet*/
 }
 
-.billede-slide {
+/* .billedeslide {
     width: 80%;
-}
+} */
 
-.billede-slide img {
+/* .billedeslide img {
     width: 100%;
+} */
+
+.billederslideshow {
+    width: 78%;
+    position: absolute; /*den her gør så alt ligger oven på hiananden  */
+    display: none;
 }
 
 
+/*Slideshow slut*/
 #lokationer-adresse {
     width: 17%;
     font-family: poppins;
-    font-size: 1vw;
+    font-size: 1.2vw;
     border-left: 3px solid black;
     padding-left: 2%;
     list-style-type: none;
+    width: 20%;
+    float: right;
+    padding-right: 3%;
 }
 
 .overskrift {
     padding-bottom: 3%;
     font-weight: bold;
 }
+
 /* Lokation slut */
 
 /* Sprödxme Start*/
-
+.instagram-container{
+    padding-top: 45%;
+}
  .instagram {
     width: 78%;
     margin: auto;
@@ -478,7 +493,7 @@ footer {
         margin: auto;
     }
 
-    #punktum {
+    .punktum {
         border-bottom: 2px dotted black;
     }
 

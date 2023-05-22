@@ -13,10 +13,18 @@ x.addEventListener("click", () => {
 });
 
 //Slideshow
-let slideIndex = 0;
-showSlides();
+const slideshowImages = document.querySelectorAll(".billederslideshow"); //vælger alel billederne slideshow div
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slideshow"); 
+let nextImageDelay = 3000; //3sek mellem hvert skift af billeder
+let imageCounter = 0;
+
+slideshowImages[imageCounter].style.display = "block"; //Blokere de billeder der ikke vises
+
+setInterval(nextImage, nextImageDelay);
+
+function nextImage() {
+slideshowImages[imageCounter].style.display = "none";
+imageCounter = (imageCounter + 1) % slideshowImages.length; //viser billede og lægger det næste ovn i og length gør at den bare fortsætter uden at stoppe
+slideshowImages[imageCounter].style.display = "block";
 }
+

@@ -4,53 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <title>SPRÖD | Aarhus bedste surdejspizza</title>
 
     <!-- SEO -->
-    <meta name="description" content="Velkommen til We Do Vintage. Her kan du købe brugte desingertasker og samtidig være med til at skabe en bedre fremtid." />
-    <meta name="keywords" content="designertasker, vintage, bæredygtighed, Louis Vuitton, Prada, Guess, Burberry, Yves Saint Laurent, mode, kvalitet, luksuriøst." />
+    <meta name="description" content="Hos SPRÖD laver vi gourmet surdejspizzaer. Råvarerne er fra danske og italienske leverandører og er særligt udvalgt og håndplukket." />
+    <meta name="keywords" content="Pizza, Takeaway, Aarhus, Madoplevelse, Surdejspizza, Håndplukkede råvarer, Italiensk, Skandinavisk." />
   </head>
 
   <body>
-    <main>
-      <!-- forste sektion på siden - forsiden-->
-      <header>
-        <div class="forside-indhold">
-            <h1>Spröd</h1>
-            <h2>Pizza</h2>
-            <p>Hos SPRÖD ønsker vi at give dig den bedste madoplevelse! Vi har en forkærlighed for det 
-                traditionelle italienske køkken, som vi gerne vil forene med den skandinaviske madkultur. 
-                Derfor bager vi alle vores pizzaer med de lækreste surdejsbunde. Alle vores råvarer er 
-                håndplukkede fra de bedste danske og Italienske leverandører, som sikker dig en ekstraordinær oplevelse.</p>
+    <!-- forste sektion på siden - forsiden-->
+    <header>
+      <!-- Mobile menu -->
+      <section class="mobil-menu">
+        <i class="fa-solid fa-x closebtn"></i>
+
+        <div class="menu-content">
+          <a href="#">Vores menu</a>
+          <a href="#">Om Spröd</a>
+          <a href="#">Lokationer</a>
         </div>
+      </section>
+
+      <div id="bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="forside-indhold">
+          <h1>Spröd</h1>
+          <h2>Pizza</h2>
+          <p>Hos SPRÖD ønsker vi at give dig den bedste madoplevelse! Vi har en forkærlighed for det 
+            traditionelle italienske køkken, som vi gerne vil forene med den skandinaviske madkultur. 
+            Derfor bager vi alle vores pizzaer med de lækreste surdejsbunde. Alle vores råvarer er 
+            håndplukkede fra de bedste danske og Italienske leverandører, som sikker dig en ekstraordinær oplevelse.</p>
+      </div>
     
-        <nav>
-            <a href="#">Vores Menu</a>
-            <img class="circle-solid" src="image/circle-solid.svg" alt="">
-            <a href="#">Om spröd</a>
-            <img class="circle-solid" src="image/circle-solid.svg" alt="">
-            <a href="#">Lokation</a>
+      <nav>
+        <a href="#">Vores Menu</a>
+          <img class="circle-solid" src="image/circle-solid.svg" alt="">
+          <a href="#">Om spröd</a>
+          <img class="circle-solid" src="image/circle-solid.svg" alt="">
+          <a href="#">Lokationer</a>
         </nav>
 
-        <div id="illustration-pizza">
+        <!-- <div id="illustration-pizza">
           <img src="image/pizza-header.svg" alt="">
-      </div>
+        </div>
 
         <div id="illustration-basilikum">
           <img src="image/illustration-basilikum.svg" alt="">
-      </div>
-      </header>
+        </div> -->
 
-      <!-- anden sektion på siden - om spröd-->
+    </header>
+    
+    <main>
+      <!-- Om spröd start-->
       <div>
         <h3>Om spröd</h3>
       </div>
       
       <section class="omsprod" >
         <div id="omsprod-tekst" >
-             <p> <!--HUSK AT INDSÆTTE RIGtIG TEKST -->
+             <p> <!--HUSK AT INDSÆTTE RIGTIG TEKST -->
                 Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum er ganske enkelt fyldtekst fra print. Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet.  Lorem Ipsum er ganske enkelt
             </p>
         </div>
@@ -65,8 +82,9 @@
         <img id="tomat-illustration" src="image/tomat-illustration.svg" alt="">
       </div>
       </section>
+      <!-- Om spröd slut-->
 
-      <!-- tredje sektion på siden - vores menu-->
+      <!-- Vores menu start -->
       <div>
         <h3>vores menu</h3>
       </div>
@@ -289,60 +307,72 @@
             <img class="kage-ikon" src="image/ikon-Tiramisu.svg" alt="">
           </div>
         </div>
-
-      </div>
-
       </section>
+      <!-- Vores menu slut -->
 
 
-      <!-- fjerde sektion på siden - lokation-->
+      <!-- Lokation start-->
       <div>
         <h3>lokationer</h3>
       </div>
-      <section class="lokationer">
-        <div id="lokationer-billeder" >
-          billeder
+
+
+      <div class="slideshow">
+        <div class="billede-slide">
+          <img src="image/slidshow-prøve1.jpg">
+        </div>
+          
+        <div class="billede-slide">
+          <img src="image/slidshow-prøve2.jpg">
+        </div>
+          
+        <div class="billede-slide">
+          <img src="image/slidshow-prøve1.jpg">
         </div>
 
-        <div id="streg-opdeler">
-          <img src="image/streg-opdeler.svg" alt="">
-        </div>
 
         <div id="lokationer-adresse" >
-          <li>Højbjerg</li>
+          <li class="overskrift" >Højbjerg</li>
           <li>Rosenvangs Alle 214</li>
           <li>8270 Højbjerg</li>
           <br>
-          <li>Aarhus C</li>
+          <li class="overskrift" >Aarhus C</li>
           <li>Odensegade 35</li>
           <li>8000 Aarhus C</li>
         </div>
-      </section>
+      </div>
+    <!-- Lokation slut-->
+  
 
-      <!-- femte sektion på siden - sprödxme-->
+      <!-- Sprödxme start -->
 
       <div>
         <h3>sprödxme</h3>
       </div>
 
+      <!--Nok ikke den rigtige måde at gøre det på normalt ville man komprimere billede til den rigtige størrelse, 
+      men for at have en bare nogenlunde god kvalitet vælger jeg at gøre det på denne måde i stedet for, da 
+      billeder på hjemmesiden spiller en rigtig vigtig rolle for stedet og atmusfæren. For at gøre billederne 
+      i endnu bedre kvalitet skulle de ikke have været komprimeret så meget, men jeg bliver også nødt til at tænke på
+      min page loade time -->
       <section class="instagram">
-        <div class="instagram-billeder">
-          Billede
-        </div>
+          <div class="instagram-billeder">
+            <img src="image/instagram-pizza.jpg" alt="">
+          </div>
 
-        <div class="instagram-billeder">
-          Billede
-        </div>
+          <div class="instagram-billeder">
+            <img src="image/instagram-butikken.jpg" alt="">
+          </div>
 
-        <div class="instagram-billeder">
-          Billede
-        </div>
+          <div class="instagram-billeder">
+            <img src="image/instagram-pige.jpg" alt="">
+          </div>
 
-        <div class="instagram-billeder">
-          Billede
-        </div>
-    
+          <div class="instagram-billeder">
+            <img src="image/instagram-pizzabakke.jpg" alt="">
+          </div>
       </section>
+      <!-- Sprödxme slut -->
     </main>
 
      <!-- sjette sektion på siden - footer-->

@@ -16,7 +16,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 25px;
     font-weight: 100;
-    margin-top: 12%;
+    padding-top: 12%;
 }
 
 h2 {
@@ -61,6 +61,74 @@ p {
     font-size: 1.1vw; 
 }
 
+/* body {
+    overflow-x: hidden;
+}*/
+
+header {
+    background-color: #F2F2F0;
+    background-image: url(image/background-img.svg);
+    background-repeat: no-repeat;
+}
+
+
+/* Mobil menu */
+.mobil-menu {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: #F2F2F0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.menu-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.mobil-menu a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 5vw;
+  letter-spacing: 5px;
+  font-family: poppins;
+  color: black;
+  display: block;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  transition: 0.5s;  /*sek det tager at skrift farve når man holder musen over*/
+}
+
+.mobil-menu a:hover,
+.mobil-menu a:focus {
+    color: pink; /*husk lige at ændre den */
+}
+
+.closebtn {
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  font-size: 18pt;
+  color: black;
+}
+
+#bars {
+position: absolute;
+  top: 35px;
+  right: 40px;
+  font-size: 18pt;
+  color: black;
+}
+
+
 /* Styling af forste sektion på siden - forsiden */
 nav a {
     text-decoration: none;
@@ -76,6 +144,7 @@ nav {
     width: 60%;
     margin: auto;
     justify-content: space-evenly;
+    padding-bottom: 12%;
 }
 
 .circle-solid {
@@ -98,7 +167,7 @@ nav {
 
 /* Placering af illustrationerne på forsiden */
 
-#illustration-pizza {
+/* #illustration-pizza {
     width: 30%;
     position: relative;
     left: 80px;
@@ -110,7 +179,7 @@ nav {
     position: relative;
     left: 1150px;
     bottom: 550px;
-  }
+  } */
 
 
 /* Styling af anden sektion på siden - om sprödk */
@@ -201,40 +270,51 @@ nav {
 }
 
 /*Styling af fjerde sektion på siden - lokation */
-.lokationer {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    grid-gap: 15px;
+
+.slideshow {
+    width: 78%;
+    margin: auto;
 }
 
-#lokationer-billeder {
-    background-color: red;
-    width: 58%;
-    height: 500px;
+.billede-slide {
+    width: 80%;
 }
 
-#streg-opdeler {
-    width: 1%;
+.billede-slide img {
+    width: 100%;
 }
+
 
 #lokationer-adresse {
     width: 17%;
+    font-family: poppins;
+    font-size: 1vw;
+    border-left: 3px solid black;
+    padding-left: 2%;
+    list-style-type: none;
+}
+
+.overskrift {
+    padding-bottom: 3%;
+    font-weight: bold;
 }
 
  /* Styling af femte sektion på siden - sprödxme */
 
  .instagram {
+    width: 78%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 78%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 5%;
  }
 
-.instagram-billeder {
+ .instagram-billeder {
     width: 23%;
-    background-color: gray; 
+ }
+
+ .instagram-billeder img {
+    width: 100%;
 }
 
  /* Styling af sjette sektion på siden - footer */
@@ -334,13 +414,21 @@ footer {
 
 /*MEDIA QUERIES*/
 
+/*LAPTOP*/ 
+    
+@media screen and (min-width: 768px){ 
+    .fa-solid {
+        display: none;
+    }
+}
+
 /*MOBIL*/ 
 
 @media screen and (max-width: 768px){ 
     h1 {
         letter-spacing: 10px;
         font-size: 17vw;
-        margin-top: 15%;
+        padding-top: 35%;
     }
     h2 {
         font-size: 5vw;
@@ -350,7 +438,7 @@ footer {
     .forside-indhold p {
         width: 100%;
         font-size: 3.5vw;
-        padding: 0px;
+        padding-bottom: 65%;
     }
 
     nav {
@@ -423,30 +511,42 @@ footer {
         text-align: left;
     }
 
-    .lokationer {
-        flex-direction: column;
-    }
-
-    #lokationer-billeder {
+    .slideshow {
         width: 85%;
-        height: 300px;
-        /* height: fit-content; når billederne er kommet ind */
         margin: auto;
     }
 
-    #streg-opdeler{
-        width: 2.3%;
+    .billede-slide {
+        width: 100%;
+    }
+
+    #lokationer-adresse {
+        font-size: 3vw;
+        width: auto;
+    }
+
+    .overskrift {
+        padding-bottom: 1%;
     }
 
     /* Sprödxme mobil */
     .instagram {
         width: 85%;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .instagram-billeder {
-        width: 100%;
+        width: 47%;
     }
 
+    .instagram div:nth-child(3), .instagram div:nth-child(4){
+        padding-top: 5%;
+    }
+
+    .instagram-billeder img {
+        width: 100%;
+    }
 
     /* Footer mobil  */
 
@@ -482,17 +582,8 @@ footer {
         width: 10%;
         text-align: left;
     }
-    
-
-
- 
 
 }
 
 
-/*LAPTOP*/ 
-    
-@media screen and (min-width: 768px){ 
 
-
-}

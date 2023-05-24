@@ -12,6 +12,7 @@ x.addEventListener("click", () => {
   overlay.style.height = "0";
 });
 
+
 //Slideshow
 const slideshowImages = document.querySelectorAll(".billederslideshow"); //vælger alel billederne slideshow div
 

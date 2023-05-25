@@ -15,7 +15,6 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 25px;
     font-weight: 100;
-    /* padding-top: 2%; */
 }
 
 h2 {
@@ -60,14 +59,14 @@ p {
     font-size: 1.1vw; 
 }
 
-/* body {
-    overflow-x: hidden;
-}*/
+body {
+    overflow-x: hidden; /*der burde ikke være side scroll men for en sikkerhedskyld sætter jeg det alligevel på, så er jeg helt sikker */
+}
 
 header {
     background-color: #F2F2F0;
-    background-image: url(image/background-img.svg); /*til computer*/
-    background-repeat: no-repeat;
+    background-image: url(image/background-img.svg); /*Baggrunds billede til computer*/
+    background-repeat: no-repeat; /*Sættes på da billede ikke skal gentage sig*/
 }
 
 /* Mobil menu start */
@@ -100,13 +99,13 @@ header {
   color: black;
   display: block;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
-  transition: 0.5s;  /*sek det tager at skrift farve når man holder musen over*/
+  border-bottom: 1px solid black; /* adskiller menupunkterne */
+  transition: 0.5s;  /* sek det tager at skrift farve når man holder musen over */
 }
 
 .mobil-menu a:hover,
 .mobil-menu a:focus {
-    color: pink; /*husk lige at ændre den */
+    color: #6a87af; /*Farven den skifter til når man holder musen hen over. Den blå farve er fra lokalet i Odensegade */
 }
 
 .closebtn {
@@ -178,7 +177,6 @@ nav {
 
 #omsprod-video {
     width: 42%;
-    /* background-color: gray; */
     height: 350px;
 }
 
@@ -196,7 +194,6 @@ nav {
 /* Om spröd slut */
 
 /* Vores menu start*/
-
 .menukort-indhold{
     background-color: #F2F2F0;
     height: fit-content;
@@ -219,7 +216,6 @@ nav {
     letter-spacing: 4px;
     font-size: 1.75vw;
     padding-top: 8%;
-    /* padding-bottom: 2%; */
 }
 
 .menukort-kolonne1 p, .menukort-kolonne2 p {
@@ -255,19 +251,17 @@ nav {
 /* Vores menu slut*/
 
 /*Lokation Start*/
-
 /*Slideshow Start*/
 .slideshow {
     width: 78%;
-    height: fit-content;
     margin: auto;
     position: relative;
 }
 
 .billederslideshow {
     width: 78%;
-    position: absolute; /*den her gør så billederne ligger oven på hiananden  */
-    display: none;
+    position: absolute; /* den her gør så billederne ligger oven på hiananden. Den arbejder sammen med position: relative;*/
+    display: none; /*Skjuler billede da de vises med JavaScript*/
 }
 
 
@@ -280,7 +274,7 @@ nav {
     padding-left: 2%;
     list-style-type: none;
     width: 20%;
-    float: right;
+    float: right; /* Placere min tekst hvor jeg gerne vil have den */
     padding-right: 3%;
 }
 
@@ -318,7 +312,6 @@ nav {
 /* Sprödxme slut*/
 
 /* Footer Start*/
-
 footer {
     background-color: black;
     height: 250px;
@@ -357,7 +350,6 @@ footer {
 /* Footer slut */
 
 /* 404-page start*/
-
 .fourofour {
     text-align: center;
     background-color: #F2F2F0;
@@ -397,7 +389,7 @@ footer {
   }
 
 /* Placering af illustrationerne */
-
+/* Kunne være slettet - se kommentar i 404-page.html */
   #Spildt-rød {
     width: 45%;
     position: relative;
@@ -413,10 +405,9 @@ footer {
   }
 /* 404-page slut*/
 
-/*Meida queries*/
+/*Media queries*/
 
 /*LAPTOP*/ 
-    
 @media screen and (min-width: 768px){ 
     .fa-solid {
         display: none;
@@ -433,7 +424,6 @@ footer {
 }
 
 /*MOBIL*/ 
-
 @media screen and (max-width: 768px){ 
     .fa-solid {
         font-size: 45px;
@@ -538,7 +528,7 @@ footer {
     .slideshow {
         width: 85%;
         margin: auto;
-        height: 350px;  /*Højde på slideshow så elementerne ikke ligger sig under slideshow*/
+        height: 350px;  /* Jeg giver mit slideshow en højde så der ikke ligger elementer sig ind under slideshow */
     }
 
     .billederslideshow {
@@ -548,8 +538,8 @@ footer {
     #lokationer-adresse {
         font-size: 3vw;
         width: auto;
-        float: none;  /*Fjerner det float jeg jeg lagt som general regl og flytter kassen tilbage på sin oprindelig plads så ligger den kasse med adressen sig automatisk under slideshow*/
-        margin-left: 7%;  /*ligger teksten 7% var kanten */
+        float: none;  /* Fjerner det float jeg jeg lagt som general regl og flytter kassen tilbage på sin oprindelig plads så ligger den kasse med adressen sig automatisk under slideshow */
+        margin-left: 7%;  /*ligger teksten 7% fra kanten så den følger resten af siden */
     }
 
     .lokationer-container {
@@ -562,7 +552,6 @@ footer {
 
     /* Sprödxme mobil */
     .instagram-container{
-        /* padding-top: 30%; */
         padding-top: 0;
     }
     .instagram {
@@ -584,7 +573,6 @@ footer {
     }
 
     /* Footer mobil  */
-
     .footer-indhold {
         flex-direction: column;
         text-align: left;

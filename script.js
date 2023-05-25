@@ -29,3 +29,6 @@ imageCounter = (imageCounter + 1) % slideshowImages.length; //viser billede og l
 slideshowImages[imageCounter].style.display = "block";
 }
 
+
+
+

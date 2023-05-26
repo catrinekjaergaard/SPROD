@@ -1,4 +1,4 @@
-/* /*Fjern padding og Margin på hele siden*/
+/* /*Fjerner padding og Margin på hele siden*/
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ h1 {
 
 h2 {
     font-family: dm serif display;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     text-transform: uppercase;
     letter-spacing: 7px;
     padding-bottom: 3%;
@@ -275,22 +275,6 @@ nav {
     padding-right: 3%;
 }
 
-/* Animation af teksten der slider ind fra højre. 
-Jeg ville gerne at teksten først slidende ind når man først var på sektionen */
-#lokationer-adresse {
-    animation: slide-in 0.7s ease-out;
-  }
-
-  @keyframes slide-in {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  
-
 .overskrift {
     padding-bottom: 3%;
     font-weight: bold;
@@ -391,7 +375,7 @@ footer {
 #button {
     font-size: 1.6vw;
     background-color: black;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
@@ -401,22 +385,13 @@ footer {
     font-family: poppins;
   }
 
-/* Placering af illustrationerne */
-/* Kunne være slettet - se kommentar i 404-page.html */
-  #Spildt-rød {
-    width: 45%;
-    position: relative;
-    left: -90px;
-    bottom: 180px;
-  }
-
-  #Spildt-rose {
-    width: 45%;
-    position: relative;
-    left: 1065px;
-    bottom: 1185px;
-  }
-/* 404-page slut*/
+/*Baggrunds billede til computer*/
+.fourofour {
+    background-image: url(image/background-img-404.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ /*404-page slut*/
 
 /*Media queries*/
 
@@ -438,9 +413,13 @@ footer {
     #tlfmobil {
         display: none;
     }
+
+    header {
+        padding-bottom: 5%;
+    }
 }
 
-/*MOBIL*/ 
+/*MOBIL virker på 5012px i responsiv browser og på mobil*/ 
 @media screen and (max-width: 768px){ 
     .fa-solid {
         font-size: 45px;
@@ -480,7 +459,6 @@ footer {
     h3 {
         width: 85%;
         font-size: 4vw;
-        margin: none;
     }
 
     header {
@@ -628,6 +606,27 @@ footer {
         width: 10%;
         text-align: left;
     }
+
+    .fourofour {
+        background-image: url(image/bacckground-img-phone-404.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+     .fourofour h6 {
+        font-size: 8vw;
+        width: 78%;
+        padding-top: 42%;
+     }
+
+     .fourofour p {
+        font-size: 5.5vw;
+        width: 60%;
+     }
+
+    #button {
+        font-size: 3vw;
+     }
 }
 
 

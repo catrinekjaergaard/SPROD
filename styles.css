@@ -59,6 +59,10 @@ body {
     overflow-x: hidden; /*der burde ikke være side scroll men for en sikkerhedskyld sætter jeg det alligevel på, så er jeg helt sikker */
 }
 
+body .fourofour {
+    overflow-x: hidden;
+}
+
 header {
     background-color: #F2F2F0;
     background-image: url(image/background-img.svg); /*Baggrunds billede til computer*/
@@ -164,7 +168,8 @@ nav {
 .omsprod {
     display: flex;
     justify-content: center;
-    grid-gap: 60px
+    grid-gap: 60px;
+    width: 100%;
 }
 
 #omsprod-tekst {
@@ -245,6 +250,7 @@ nav {
 .kage-ikon {
     width: 13%;
 }
+
 /* Vores menu slut*/
 
 /*Lokation Start*/
@@ -415,7 +421,7 @@ footer {
     }
 
     header {
-        padding-bottom: 5%;
+        padding-bottom: 7%;
     }
 }
 
@@ -546,6 +552,7 @@ footer {
     .lokationer-container {
         padding-bottom: 5%;
     }
+    /* lokalt har jeg ingen problemer med at teksten er bag billede, det er kun når hjemmesiden er på mit domæne? */
 
     .overskrift {
         padding-bottom: 1%;
